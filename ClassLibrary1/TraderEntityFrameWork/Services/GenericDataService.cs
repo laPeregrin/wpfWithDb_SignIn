@@ -13,7 +13,7 @@ namespace TraderEntityFrameWork.Services
     public class GenericDataService<T> : IDataService<T> where T : DomainObject
     {
         private readonly DbContextOptionsFactory _context;
-
+        
         public GenericDataService(DbContextOptionsFactory context)
         {
             _context = context;
