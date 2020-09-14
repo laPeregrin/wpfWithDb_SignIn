@@ -1,0 +1,12 @@
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\FinancialModelin\bin\Debug\netcoreapp3.1\FinancialModelin.deps.json
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\FinancialModelin\bin\Debug\netcoreapp3.1\FinancialModelin.dll
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\FinancialModelin\bin\Debug\netcoreapp3.1\Domain.dll
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\FinancialModelin\bin\Debug\netcoreapp3.1\Domain.pdb
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\FinancialModelin\obj\Debug\netcoreapp3.1\FinancialModelin.csprojAssemblyReference.cache
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\FinancialModelin\obj\Debug\netcoreapp3.1\FinancialModelin.AssemblyInfoInputs.cache
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\FinancialModelin\obj\Debug\netcoreapp3.1\FinancialModelin.AssemblyInfo.cs
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\FinancialModelin\obj\Debug\netcoreapp3.1\FinancialModelin.csproj.CopyComplete
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\FinancialModelin\bin\Debug\netcoreapp3.1\FinancialModelin.pdb
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\FinancialModelin\obj\Debug\netcoreapp3.1\FinancialModelin.csproj.CoreCompileInputs.cache
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\FinancialModelin\obj\Debug\netcoreapp3.1\FinancialModelin.dll
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\FinancialModelin\obj\Debug\netcoreapp3.1\FinancialModelin.pdb

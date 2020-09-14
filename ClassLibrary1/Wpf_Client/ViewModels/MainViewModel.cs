@@ -7,6 +7,7 @@ namespace Wpf_Client.ViewModels
 {
     class MainViewModel : ViewModelBase
     {
-        public INavigator Navigator { get; set; } = new Navigator();
+        private INavigator navigator = new Navigator();
+        public INavigator Navigator { get { return navigator; } set { navigator = value; OnPropertyChanged(); } }
     }
 }

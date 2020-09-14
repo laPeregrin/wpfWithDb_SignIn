@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\Wpf_Client\App.xaml
-31974475697
+5-1317419382
 
-11-2041478374
-219-955170566
-Controls\NavigationBar.xaml;MainWindow.xaml;Styles\Common.xaml;
+14580202373
+2201853379859
+Controls\NavigationBar.xaml;MainWindow.xaml;Styles\Common.xaml;Views\HomewView.xaml;Views\PortfolioView.xaml;
 
 False
 

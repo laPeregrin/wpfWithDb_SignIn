@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinancialModelin.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ namespace Wpf_Client.Commands
     {
         public event EventHandler CanExecuteChanged;
 
-        private INavigator _navigator;
+        private readonly INavigator _navigator;
 
         public UpdateCurrentViewModelCommand(INavigator navigator)
         {
@@ -27,21 +28,12 @@ namespace Wpf_Client.Commands
 
         public void Execute(object parameter)
         {
-            if(parameter is ViewType)
+            if (parameter is ViewType)
             {
                 ViewType viewType = (ViewType)parameter;
-                switch(viewType)
-                {
-                    case ViewType.Home:
-                        _navigator.CurrentViewModels = new HomeViewModel();
-                            break;
-                    case ViewType.Portfolio:
-                        _navigator.CurrentViewModels = new PortfolioViewModel();
-                            break;
-                }
-            }
-            
 
+                _navigator.CurrentViewModel = new HomeViewModel(MajorIndexViewModel.LoadMajorIndexViewModel(new MajorIndexService()));
+            }
         }
     }
 }

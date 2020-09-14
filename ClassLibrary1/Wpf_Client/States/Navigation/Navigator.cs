@@ -9,8 +9,8 @@ namespace Wpf_Client.States.Navigation
 {
     public class Navigator : INavigator
     {
-        ViewModelBase INavigator.CurrentViewModels { get; set; }
-        public ICommand UpdateCurrentViewModel => new UpdateCurrentViewModelCommand(this);
+        ViewModelBase INavigator.CurrentViewModel { get; set; }
+        public ICommand UpdateCurrentViewModelCommand => new UpdateCurrentViewModelCommand(this);
        
     }
 }

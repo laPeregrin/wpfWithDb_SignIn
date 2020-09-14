@@ -7,11 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Views\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ClassLibrary1\Domain.csproj" />
+    <ProjectReference Include="..\FinancialModelin\FinancialModelin.csproj" />
     <ProjectReference Include="..\TraderEntityFrameWork\TraderEntityFrameWork.csproj" />
   </ItemGroup>
 

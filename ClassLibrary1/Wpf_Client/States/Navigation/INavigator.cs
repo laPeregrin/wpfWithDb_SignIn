@@ -15,7 +15,7 @@ namespace Wpf_Client.States.Navigation
     }
     public interface INavigator
     {
-        ViewModelBase CurrentViewModels { get; set; }
-        ICommand UpdateCurrentViewModel { get; }
+        ViewModelBase CurrentViewModel { get; set; }
+        ICommand UpdateCurrentViewModelCommand { get; }
     }
 }

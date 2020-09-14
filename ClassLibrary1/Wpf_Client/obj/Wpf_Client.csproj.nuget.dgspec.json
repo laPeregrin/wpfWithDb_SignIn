@@ -66,6 +66,78 @@
         }
       }
     },
+    "W:\\programs\\git_repos\\Wpf_repos\\wpfWithDb_SignIn\\ClassLibrary1\\FinancialModelin\\FinancialModelin.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "W:\\programs\\git_repos\\Wpf_repos\\wpfWithDb_SignIn\\ClassLibrary1\\FinancialModelin\\FinancialModelin.csproj",
+        "projectName": "FinancialModelin",
+        "projectPath": "W:\\programs\\git_repos\\Wpf_repos\\wpfWithDb_SignIn\\ClassLibrary1\\FinancialModelin\\FinancialModelin.csproj",
+        "packagesPath": "C:\\Users\\Marshall\\.nuget\\packages\\",
+        "outputPath": "W:\\programs\\git_repos\\Wpf_repos\\wpfWithDb_SignIn\\ClassLibrary1\\FinancialModelin\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Marshall\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "W:\\programs\\git_repos\\Wpf_repos\\wpfWithDb_SignIn\\ClassLibrary1\\ClassLibrary1\\Domain.csproj": {
+                "projectPath": "W:\\programs\\git_repos\\Wpf_repos\\wpfWithDb_SignIn\\ClassLibrary1\\ClassLibrary1\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "W:\\programs\\git_repos\\Wpf_repos\\wpfWithDb_SignIn\\ClassLibrary1\\TraderEntityFrameWork\\TraderEntityFrameWork.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -183,6 +255,9 @@
             "projectReferences": {
               "W:\\programs\\git_repos\\Wpf_repos\\wpfWithDb_SignIn\\ClassLibrary1\\ClassLibrary1\\Domain.csproj": {
                 "projectPath": "W:\\programs\\git_repos\\Wpf_repos\\wpfWithDb_SignIn\\ClassLibrary1\\ClassLibrary1\\Domain.csproj"
+              },
+              "W:\\programs\\git_repos\\Wpf_repos\\wpfWithDb_SignIn\\ClassLibrary1\\FinancialModelin\\FinancialModelin.csproj": {
+                "projectPath": "W:\\programs\\git_repos\\Wpf_repos\\wpfWithDb_SignIn\\ClassLibrary1\\FinancialModelin\\FinancialModelin.csproj"
               },
               "W:\\programs\\git_repos\\Wpf_repos\\wpfWithDb_SignIn\\ClassLibrary1\\TraderEntityFrameWork\\TraderEntityFrameWork.csproj": {
                 "projectPath": "W:\\programs\\git_repos\\Wpf_repos\\wpfWithDb_SignIn\\ClassLibrary1\\TraderEntityFrameWork\\TraderEntityFrameWork.csproj"
