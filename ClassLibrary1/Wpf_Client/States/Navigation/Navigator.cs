@@ -7,10 +7,12 @@ using Wpf_Client.ViewModels;
 
 namespace Wpf_Client.States.Navigation
 {
-    public class Navigator : INavigator
+    public class Navigator : ViewModelBase, INavigator
     {
-        ViewModelBase INavigator.CurrentViewModel { get; set; }
+        private ViewModelBase _CurrentViewModel { get; set; }
+        public ViewModelBase CurrentViewModel { get { return _CurrentViewModel; } set { _CurrentViewModel = value; OnPropertyChanged(); } }
         public ICommand UpdateCurrentViewModelCommand => new UpdateCurrentViewModelCommand(this);
-       
+
+        
     }
 }

@@ -17,13 +17,7 @@ namespace Wpf_Client
     {
         protected override void OnStartup(StartupEventArgs e)
         {
-            //new MajorIndexService().GetMajorIndex(Domain.Models.MajorIndexType.DownJones).ContinueWith((task) =>
-            //{
-            //    var index = task.Result;
-                
-            //}); simple test how to work API via GetMajorIndex and with this task continue to task => index = task.Result()
-
-
+           
             Window window = new MainWindow();
             window.DataContext = new MainViewModel();
 
