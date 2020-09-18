@@ -6,3 +6,4 @@ W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\ClassLibrary1\bin
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\ClassLibrary1\obj\Debug\netcoreapp3.1\Domain.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\ClassLibrary1\obj\Debug\netcoreapp3.1\Domain.pdb
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\ClassLibrary1\obj\Debug\netcoreapp3.1\Domain.csproj.CoreCompileInputs.cache
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\ClassLibrary1\obj\Debug\netcoreapp3.1\Domain.csprojAssemblyReference.cache

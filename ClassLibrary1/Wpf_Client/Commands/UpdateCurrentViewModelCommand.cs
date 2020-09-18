@@ -17,16 +17,12 @@ namespace Wpf_Client.Commands
 
         public UpdateCurrentViewModelCommand(INavigator navigator)
         {
-          
             _navigator = navigator;
-
         }
-
         public bool CanExecute(object parameter)
         {
             return alwaysTrue;
         }
-
         public void Execute(object parameter)
         {
             if (parameter is ViewType)
@@ -43,10 +39,8 @@ namespace Wpf_Client.Commands
                     default:
                         break;
                 }
-                
             }
         }
-
         private bool alwaysTrue { get { return true; }}
     }
 }
