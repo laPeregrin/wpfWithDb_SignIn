@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Wpf_Client.ViewModels
 {
-    class PortfolioViewModel : ViewModelBase
+    public class PortfolioViewModel : ViewModelBase
     {
     }
 }

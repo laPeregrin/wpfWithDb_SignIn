@@ -7,19 +7,22 @@ using System.Threading.Tasks;
 
 namespace Wpf_Client.ViewModels
 {
-    class MajorIndexViewModel : ViewModelBase
+    public class MajorIndexListingViewModel : ViewModelBase
     {
         public IMajorIndexService _indexService;
-        public MajorIndex DowJones { get; set; }
-        public MajorIndex Nasdaq { get; set; }
-        public MajorIndex SP500 { get; set; }
-        public MajorIndexViewModel(IMajorIndexService indexService)
+        private MajorIndex _DowJones;
+        private MajorIndex _Nasdaq;
+        private MajorIndex _SP500;
+        public MajorIndex DowJones { get { return _DowJones; } set { _DowJones = value; OnPropertyChanged(); } }
+        public MajorIndex Nasdaq { get { return _Nasdaq; } set { _Nasdaq = value; OnPropertyChanged(); } }
+        public MajorIndex SP500 { get { return _SP500; } set { _SP500 = value; OnPropertyChanged(); } }
+        public MajorIndexListingViewModel(IMajorIndexService indexService)
         {
             _indexService = indexService;
         }
-        public static MajorIndexViewModel LoadMajorIndexViewModel(IMajorIndexService majorIndexService)
+        public static MajorIndexListingViewModel LoadMajorIndexViewModel(IMajorIndexService majorIndexService)
         {
-            MajorIndexViewModel majorIndexViewModel = new MajorIndexViewModel(majorIndexService);
+            MajorIndexListingViewModel majorIndexViewModel = new MajorIndexListingViewModel(majorIndexService);
             majorIndexViewModel.LoadMajorIndexes();
             return majorIndexViewModel;
         }
@@ -27,7 +30,7 @@ namespace Wpf_Client.ViewModels
         {
             _indexService.GetMajorIndex(MajorIndexType.DownJones).ContinueWith(task =>
             {
-                if(task.Exception == null)
+                if (task.Exception == null)
                 {
                     DowJones = task.Result;
                 }
