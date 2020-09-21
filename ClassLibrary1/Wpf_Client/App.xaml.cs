@@ -21,6 +21,7 @@ namespace Wpf_Client
             Window window = new MainWindow();
             window.DataContext = new MainViewModel();
 
+
             base.OnStartup(e);
         }
     }

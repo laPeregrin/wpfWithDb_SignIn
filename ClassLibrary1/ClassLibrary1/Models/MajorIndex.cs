@@ -12,6 +12,7 @@ namespace Domain.Models
     }
     public class MajorIndex
     {
+        public string IndexName { get; set; }
         public double Prise { get; set; }
         public double Changes { get; set; }
         public MajorIndexType Type { get; set; }

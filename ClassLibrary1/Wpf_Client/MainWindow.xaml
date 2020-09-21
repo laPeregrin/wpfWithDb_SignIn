@@ -17,7 +17,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <control:NavigationBar Grid.Row="0" DataContext="{Binding Navigator}"/>
-        <ContentControl Grid.Row="1" Content="{Binding Navigator.CurrentViewModel}" RenderTransformOrigin="0.5,0.5" Height="200"/>
+        <ContentControl Grid.Row="1" Content="{Binding Navigator.CurrentViewModel}" RenderTransformOrigin="0.5,0.5" Height="200"  VerticalAlignment="Top"/>
 
 
     </Grid>

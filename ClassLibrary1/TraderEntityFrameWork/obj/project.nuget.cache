@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RCmiV6nWNyEbhSPn951o3GEi3vbtwulVBYNfQpAqd6x4dXqzZTy3h58BUDn88EGbZ2cDudnBs+qZs7JiTuT2/A==",
+  "dgSpecHash": "mrP260GtDT/piL8/Cf2kf9XShz5S4T2KuyysvVDYEvlDlN5dZazNK52gQrKvcw/1IKIt5udLwCUt2R05pgKA7Q==",
   "success": true,
   "projectFilePath": "W:\\programs\\git_repos\\Wpf_repos\\wpfWithDb_SignIn\\ClassLibrary1\\TraderEntityFrameWork\\TraderEntityFrameWork.csproj",
   "expectedPackageFiles": [
@@ -14,7 +14,7 @@
     "C:\\Users\\Marshall\\.nuget\\packages\\microsoft.entityframeworkcore.design\\3.1.8\\microsoft.entityframeworkcore.design.3.1.8.nupkg.sha512",
     "C:\\Users\\Marshall\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.8\\microsoft.entityframeworkcore.relational.3.1.8.nupkg.sha512",
     "C:\\Users\\Marshall\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\3.1.7\\microsoft.entityframeworkcore.sqlserver.3.1.7.nupkg.sha512",
-    "C:\\Users\\Marshall\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\3.1.7\\microsoft.entityframeworkcore.tools.3.1.7.nupkg.sha512",
+    "C:\\Users\\Marshall\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\3.1.8\\microsoft.entityframeworkcore.tools.3.1.8.nupkg.sha512",
     "C:\\Users\\Marshall\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.8\\microsoft.extensions.caching.abstractions.3.1.8.nupkg.sha512",
     "C:\\Users\\Marshall\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.8\\microsoft.extensions.caching.memory.3.1.8.nupkg.sha512",
     "C:\\Users\\Marshall\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.8\\microsoft.extensions.configuration.3.1.8.nupkg.sha512",

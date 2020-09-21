@@ -14,13 +14,11 @@ namespace FinancialModelin.Services
     {
         public async Task<MajorIndex> GetMajorIndex(MajorIndexType indexType)
         {
-            using (HttpClient client = new HttpClient())
+            using (FinancialModelingPreGttpClient client = new FinancialModelingPreGttpClient())
             {
-                string uri = "https://financialmodelingprep.com//api/v3/major-indexes/" + GetUriSuffix(indexType);
-                HttpResponseMessage responce = await client.GetAsync(
-                    "/symbol");
-                string jsonResponce = await responce.Content.ReadAsStringAsync();
-                MajorIndex majorIndex = JsonConvert.DeserializeObject<MajorIndex>(jsonResponce);
+                string uri = "major-indexes/" + GetUriSuffix(indexType);
+                MajorIndex majorIndex = await client.GetAsync<MajorIndex>(uri);
+                majorIndex.Type = indexType;
                 return majorIndex;
             }
         }
@@ -35,7 +33,7 @@ namespace FinancialModelin.Services
                 case MajorIndexType.SP500:
                     return ".INX";
                 default:
-                    return ".DJI";
+                 throw new Exception("Major index type does not have a suffix defiend");
             }
         }
     }

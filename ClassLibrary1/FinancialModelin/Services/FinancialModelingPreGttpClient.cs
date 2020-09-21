@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using FinancialModelin.Results;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -17,10 +18,14 @@ namespace FinancialModelin.Services
 
         public async Task<T> GetAsync<T>(string uri)
         {
-            HttpResponseMessage responseMessage = await GetAsync($"{uri}?apikey=1895ae0577427f4130678a03b37295bd");
-            string jsonResponce = await responseMessage.Content.ReadAsStringAsync();
+            HttpResponseMessage responce = await GetAsync($"{uri}?apikey=1895ae0577427f4130678a03b37295bd");
+            string jsonResponce = await responce.Content.ReadAsStringAsync();
+            StockPriceResult stockPriceResult = JsonConvert.DeserializeObject<StockPriceResult>(jsonResponce);
+
+           
 
             return JsonConvert.DeserializeObject<T>(jsonResponce);
         }
     }
 }
+//$"{uri}?apikey=1895ae0577427f4130678a03b37295bd"
