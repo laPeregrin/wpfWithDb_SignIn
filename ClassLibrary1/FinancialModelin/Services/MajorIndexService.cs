@@ -12,9 +12,10 @@ namespace FinancialModelin.Services
 {
     public class MajorIndexService : IMajorIndexService
     {
+        FinancialModelingPrepHttpClientFactory _client;
         public async Task<MajorIndex> GetMajorIndex(MajorIndexType indexType)
         {
-            using (FinancialModelingPreGttpClient client = new FinancialModelingPreGttpClient())
+            using (FinancialModelingPreHttpClient client =_client.CreateHttpClient())
             {
                 string uri = "major-indexes/" + GetUriSuffix(indexType);
                 MajorIndex majorIndex = await client.GetAsync<MajorIndex>(uri);

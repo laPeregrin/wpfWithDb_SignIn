@@ -10,18 +10,25 @@ using System.Threading.Tasks;
 
 namespace FinancialModelin.Services
 {
-    public class  StockPriceService : IStockPriceService
+    public class StockPriceService : IStockPriceService
     {
+        private readonly FinancialModelingPrepHttpClientFactory _httpClientFactory;
+
+        public StockPriceService(FinancialModelingPrepHttpClientFactory httpClientFactory)
+        {
+            _httpClientFactory = httpClientFactory;
+        }
+
         public async Task<double> GetPrice(string symbol)
         {
-            using (FinancialModelingPreGttpClient client = new FinancialModelingPreGttpClient())
+            using (FinancialModelingPreHttpClient client = _httpClientFactory.CreateHttpClient())
             {
-                string uri = "stock/real=time-price/" + symbol;
+                string uri = "stock/real-time-price/" + symbol;
 
                 StockPriceResult stockPriceResult = await client.GetAsync<StockPriceResult>(uri);
-               if(stockPriceResult.Price == 0)
+                if (stockPriceResult.Price == 0)
                 {
-                   throw new InvalidSymbolException(symbol);
+                    throw new InvalidSymbolException(symbol);
                 }
                 return stockPriceResult.Price;
             }

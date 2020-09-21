@@ -9,23 +9,21 @@ using System.Threading.Tasks;
 
 namespace FinancialModelin.Services
 {
-    class FinancialModelingPreGttpClient : HttpClient
+    public class FinancialModelingPreHttpClient : HttpClient
     {
-        public FinancialModelingPreGttpClient()
+        private readonly string _apiKey;
+        public FinancialModelingPreHttpClient(string apiKey)
         {
             this.BaseAddress = new Uri("https://financialmodelingprep.com/api/v3/");
+            _apiKey = apiKey;
         }
 
         public async Task<T> GetAsync<T>(string uri)
         {
-            HttpResponseMessage responce = await GetAsync($"{uri}?apikey=1895ae0577427f4130678a03b37295bd");
+            HttpResponseMessage responce = await GetAsync($"{uri}?apikey={_apiKey}");
             string jsonResponce = await responce.Content.ReadAsStringAsync();
-            StockPriceResult stockPriceResult = JsonConvert.DeserializeObject<StockPriceResult>(jsonResponce);
-
-           
 
             return JsonConvert.DeserializeObject<T>(jsonResponce);
         }
     }
 }
-//$"{uri}?apikey=1895ae0577427f4130678a03b37295bd"
