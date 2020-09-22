@@ -13,6 +13,12 @@ namespace FinancialModelin.Services
     public class MajorIndexService : IMajorIndexService
     {
         FinancialModelingPrepHttpClientFactory _client;
+
+        public MajorIndexService(FinancialModelingPrepHttpClientFactory client)
+        {
+            _client = client;
+        }
+
         public async Task<MajorIndex> GetMajorIndex(MajorIndexType indexType)
         {
             using (FinancialModelingPreHttpClient client =_client.CreateHttpClient())

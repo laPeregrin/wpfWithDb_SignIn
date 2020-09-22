@@ -9,9 +9,8 @@ namespace FinancialModelin
     {
         private readonly string _apiKey;
 
-        public FinancialModelingPrepHttpClientFactory(string apiKey)
+        public FinancialModelingPrepHttpClientFactory(string apiKey= "1895ae0577427f4130678a03b37295bd")
         {
-            apiKey = "1895ae0577427f4130678a03b37295bd";
             _apiKey = apiKey;
         }
 
