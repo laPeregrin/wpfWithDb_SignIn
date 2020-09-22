@@ -4,24 +4,24 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TraderEntityFrameWork.Services.Common;
 
 namespace TraderEntityFrameWork.Services
 {
-    public class GenericDataService<T> : IDataService<T> where T : DomainObject
+    public class AccountDataService : IDataService<Account>
     {
         private readonly DbContextOptionsFactory _context;
-        private readonly NonQueryDataService<T> _nonQueryDataService; 
-        public GenericDataService(DbContextOptionsFactory context)
+        private readonly NonQueryDataService<Account> _nonQueryDataService;
+
+        public AccountDataService(DbContextOptionsFactory context)
         {
             _context = context;
-            _nonQueryDataService = new NonQueryDataService<T>(_context);
+            _nonQueryDataService = new NonQueryDataService<Account>(_context);
         }
 
-        public async Task<T> Create(T entity)
+        public async Task<Account> Create(Account entity)
         {
             return await _nonQueryDataService.Create(entity);
         }
@@ -31,26 +31,26 @@ namespace TraderEntityFrameWork.Services
             return await _nonQueryDataService.Delete(id);
         }
 
-        public async Task<T> Get(int Id)
+        public async Task<Account> Get(int Id)
         {
             using (TraderDbContext context = _context.CreateDbContext())
             {
-                T entity = await context.Set<T>().FirstOrDefaultAsync(e => e.id == Id);
+                Account entity = await context.Accounts.Include(a => a.AssetTransactions).FirstOrDefaultAsync(e => e.id == Id);
                 return entity;
             }
         }
 
-        public async Task<IEnumerable<T>> GetAll()
+        public async Task<IEnumerable<Account>> GetAll()
         {
             using (TraderDbContext context = _context.CreateDbContext())
             {
-                IEnumerable<T> entity = await context.Set<T>().ToListAsync();
+                IEnumerable<Account> entity = await context.Accounts.Include(a => a.AssetTransactions).ToListAsync();
                 return entity;
 
             }
         }
 
-        public async Task<T> Update(int id, T entity)
+        public async Task<Account> Update(int id, Account entity)
         {
             return await _nonQueryDataService.Update(id, entity);
         }

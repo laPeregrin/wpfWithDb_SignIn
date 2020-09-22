@@ -13,7 +13,6 @@ namespace FinancialModelin.Services
     public class StockPriceService : IStockPriceService
     {
         private readonly FinancialModelingPrepHttpClientFactory _httpClientFactory;
-
         public StockPriceService(FinancialModelingPrepHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
