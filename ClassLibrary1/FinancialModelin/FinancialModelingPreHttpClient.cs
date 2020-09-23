@@ -11,16 +11,14 @@ namespace FinancialModelin.Services
 {
     public class FinancialModelingPreHttpClient : HttpClient
     {
-        private readonly string _apiKey;
-        public FinancialModelingPreHttpClient(string apiKey)
+        public FinancialModelingPreHttpClient()
         {
             this.BaseAddress = new Uri("https://financialmodelingprep.com/api/v3/");
-            _apiKey = apiKey;
         }
 
         public async Task<T> GetAsync<T>(string uri)
         {
-            HttpResponseMessage responce = await GetAsync($"{uri}?apikey={_apiKey}");
+            HttpResponseMessage responce = await GetAsync($"{uri}?apikey=1895ae0577427f4130678a03b37295bd");
             string jsonResponce = await responce.Content.ReadAsStringAsync();
 
             return JsonConvert.DeserializeObject<T>(jsonResponce);

@@ -9,10 +9,28 @@ namespace Wpf_Client.States.Navigation
 {
     public class Navigator : ViewModelBase, INavigator
     {
-        private ViewModelBase _CurrentViewModel { get; set; }
-        public ViewModelBase CurrentViewModel { get { return _CurrentViewModel; } set { _CurrentViewModel = value; OnPropertyChanged(); } }
-        public ICommand UpdateCurrentViewModelCommand => new UpdateCurrentViewModelCommand(this);
+        private ViewModelBase _CurrentViewModel;
+        public ViewModelBase CurrentViewModel
+        {
+            get
+            {
+                return _CurrentViewModel;
+            }
+            set
+            {
+                _CurrentViewModel = value;
+                OnPropertyChanged();
+            }
+        }
+        public ICommand UpdateCurrentViewModelCommand { get; set; }
+        public Navigator(ISimpleTraderViewModelAbstractFactory viewModelFactory)
+        {
+            UpdateCurrentViewModelCommand = new UpdateCurrentViewModelCommand(this, viewModelFactory);
+        }
 
-        
+
+
     }
+
 }
+

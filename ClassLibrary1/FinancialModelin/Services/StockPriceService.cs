@@ -12,15 +12,13 @@ namespace FinancialModelin.Services
 {
     public class StockPriceService : IStockPriceService
     {
-        private readonly FinancialModelingPrepHttpClientFactory _httpClientFactory;
-        public StockPriceService(FinancialModelingPrepHttpClientFactory httpClientFactory)
+        public StockPriceService()
         {
-            _httpClientFactory = httpClientFactory;
         }
 
         public async Task<double> GetPrice(string symbol)
         {
-            using (FinancialModelingPreHttpClient client = _httpClientFactory.CreateHttpClient())
+            using (FinancialModelingPreHttpClient client = new FinancialModelingPreHttpClient())
             {
                 string uri = "stock/real-time-price/" + symbol;
 

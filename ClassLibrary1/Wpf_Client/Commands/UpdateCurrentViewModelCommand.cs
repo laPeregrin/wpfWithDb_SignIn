@@ -15,11 +15,16 @@ namespace Wpf_Client.Commands
     {
         public event EventHandler CanExecuteChanged;
         private readonly INavigator _navigator;
+        private readonly ISimpleTraderViewModelAbstractFactory _viewModelFactory;
 
-        public UpdateCurrentViewModelCommand(INavigator navigator)
+        public UpdateCurrentViewModelCommand(
+            INavigator navigator, 
+            ISimpleTraderViewModelAbstractFactory viewModelFactory)
         {
             _navigator = navigator;
+            _viewModelFactory = viewModelFactory;
         }
+
         public bool CanExecute(object parameter)
         {
             return alwaysTrue;
@@ -29,17 +34,7 @@ namespace Wpf_Client.Commands
             if (parameter is ViewType)
             {
                 ViewType viewType = (ViewType)parameter;
-                switch(viewType)
-                {
-                    case ViewType.Home:
-                        _navigator.CurrentViewModel = new HomeViewModel(MajorIndexListingViewModel.LoadMajorIndexViewModel(new MajorIndexService(new FinancialModelingPrepHttpClientFactory())));
-                        break;
-                    case ViewType.Portfolio:
-                        _navigator.CurrentViewModel = new PortfolioViewModel();
-                        break;
-                    default:
-                        break;
-                }
+                _navigator.CurrentViewModel = _viewModelFactory.CreateViewModel(viewType);
             }
         }
         private bool alwaysTrue { get { return true; }}

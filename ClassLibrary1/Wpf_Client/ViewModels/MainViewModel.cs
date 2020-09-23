@@ -7,11 +7,11 @@ namespace Wpf_Client.ViewModels
 {
     public class MainViewModel : ViewModelBase
     {
-        private INavigator _Navigator { get; set; } = new Navigator();
-        public INavigator Navigator { get { return _Navigator; } set { _Navigator = value; OnPropertyChanged(); } }
+        public INavigator Navigator { get; set; }
 
-        public MainViewModel()
+        public MainViewModel(INavigator navigator)
         {
+            Navigator = navigator;
             Navigator.UpdateCurrentViewModelCommand.Execute(ViewType.Home);
         }
     }
