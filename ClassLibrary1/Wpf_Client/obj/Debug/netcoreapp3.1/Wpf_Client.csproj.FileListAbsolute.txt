@@ -74,3 +74,5 @@ W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\Wpf_Client\obj\De
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\Wpf_Client\obj\Debug\netcoreapp3.1\Controls\MajorIndexCard.baml
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\Wpf_Client\obj\Debug\netcoreapp3.1\Controls\MajorIndexListing.g.cs
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\Wpf_Client\obj\Debug\netcoreapp3.1\Controls\MajorIndexListing.baml
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\Wpf_Client\obj\Debug\netcoreapp3.1\Views\BuyView.g.cs
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\Wpf_Client\obj\Debug\netcoreapp3.1\Views\BuyView.baml

@@ -44,7 +44,8 @@ namespace Wpf_Client
             services.AddSingleton<IBuyStockService, BuyStockService>();
             services.AddSingleton<IMajorIndexService, MajorIndexService>();
 
-            services.AddSingleton<ISimpleTraderViewModelAbstractFactory, SimpleTraderViewModelAbstractFactory>();
+            services.AddSingleton<ISimpleTraderViewModeGenericlFactory<BuyViewModel>, BuyViewModelFactory>();
+            services.AddSingleton<ISimpleTraderViewModelAbstractFactory, AbstractSimpleTraderViewModelFactory>();
             services.AddSingleton<ISimpleTraderViewModeGenericlFactory<HomeViewModel>, HomerViewModelFactory>();
             services.AddSingleton<ISimpleTraderViewModeGenericlFactory<PortfolioViewModel>, PortfolioViewModelFactory>();
             services.AddSingleton<ISimpleTraderViewModeGenericlFactory<MajorIndexListingViewModel>, MajorIndexListeningViewModelFactory>();

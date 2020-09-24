@@ -1,4 +1,4 @@
-﻿W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\Wpf_Client\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+﻿
 FW:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\Wpf_Client\App.xaml;;
 FW:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\Wpf_Client\Controls\MajorIndexCard.xaml;;
 FW:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\Wpf_Client\Controls\MajorIndexListing.xaml;;
@@ -6,6 +6,7 @@ FW:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\Wpf_Client\Contr
 FW:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\Wpf_Client\MainWindow.xaml;;
 FW:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\Wpf_Client\Styles\Common.xaml;;
 FW:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\Wpf_Client\Styles\NavigationBar.xaml;;
+FW:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\Wpf_Client\Views\BuyView.xaml;;
 FW:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\Wpf_Client\Views\HomewView.xaml;;
 FW:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\ClassLibrary1\Wpf_Client\Views\PortfolioView.xaml;;
 

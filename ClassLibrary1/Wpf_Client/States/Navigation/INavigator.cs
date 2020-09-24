@@ -11,7 +11,8 @@ namespace Wpf_Client.States.Navigation
     public enum ViewType
     {
         Home,
-        Portfolio
+        Portfolio,
+        Buy
     }
     public interface INavigator
     {
