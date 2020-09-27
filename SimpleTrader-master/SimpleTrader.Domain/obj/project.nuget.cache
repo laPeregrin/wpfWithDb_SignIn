@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "iTU7EYmwKKedluBfT3bSrKDvuRbD9bc/XzDGKNlw91dfW9S17eNscpmlHSC0LxZDLWqVr/NjfqigXtsfg0XL7w==",
+  "success": true,
+  "projectFilePath": "W:\\programs\\git_repos\\Wpf_repos\\wpfWithDb_SignIn\\SimpleTrader-master\\SimpleTrader.Domain\\SimpleTrader.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Marshall\\.nuget\\packages\\microsoft.netcore.app\\2.2.0\\microsoft.netcore.app.2.2.0.nupkg.sha512",
+    "C:\\Users\\Marshall\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.2.0\\microsoft.netcore.dotnetapphost.2.2.0.nupkg.sha512",
+    "C:\\Users\\Marshall\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\2.2.0\\microsoft.netcore.dotnethostpolicy.2.2.0.nupkg.sha512",
+    "C:\\Users\\Marshall\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.2.0\\microsoft.netcore.dotnethostresolver.2.2.0.nupkg.sha512",
+    "C:\\Users\\Marshall\\.nuget\\packages\\microsoft.netcore.platforms\\2.2.0\\microsoft.netcore.platforms.2.2.0.nupkg.sha512",
+    "C:\\Users\\Marshall\\.nuget\\packages\\microsoft.netcore.targets\\2.0.0\\microsoft.netcore.targets.2.0.0.nupkg.sha512",
+    "C:\\Users\\Marshall\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
