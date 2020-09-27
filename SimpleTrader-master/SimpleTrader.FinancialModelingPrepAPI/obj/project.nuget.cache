@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "R/fSdTr2ISh/OhxBTcqzoeYEUuLZWYfn9h7O5MB3VAsGoqdOfzu8ERIR14SfbJji37BI91qnkUkKyjtOTtnELA==",
+  "success": true,
+  "projectFilePath": "W:\\programs\\git_repos\\Wpf_repos\\wpfWithDb_SignIn\\SimpleTrader-master\\SimpleTrader.FinancialModelingPrepAPI\\SimpleTrader.FinancialModelingPrepAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Marshall\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Marshall\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\Marshall\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\Marshall\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
