@@ -1,0 +1,12 @@
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader-master\SimpleTrader.FinancialModelingPrepAPI\bin\Debug\netcoreapp3.0\SimpleTrader.FinancialModelingPrepAPI.deps.json
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader-master\SimpleTrader.FinancialModelingPrepAPI\bin\Debug\netcoreapp3.0\SimpleTrader.FinancialModelingPrepAPI.dll
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader-master\SimpleTrader.FinancialModelingPrepAPI\bin\Debug\netcoreapp3.0\SimpleTrader.FinancialModelingPrepAPI.pdb
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader-master\SimpleTrader.FinancialModelingPrepAPI\bin\Debug\netcoreapp3.0\SimpleTrader.Domain.dll
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader-master\SimpleTrader.FinancialModelingPrepAPI\bin\Debug\netcoreapp3.0\SimpleTrader.Domain.pdb
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader-master\SimpleTrader.FinancialModelingPrepAPI\obj\Debug\netcoreapp3.0\SimpleTrader.FinancialModelingPrepAPI.csprojAssemblyReference.cache
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader-master\SimpleTrader.FinancialModelingPrepAPI\obj\Debug\netcoreapp3.0\SimpleTrader.FinancialModelingPrepAPI.AssemblyInfoInputs.cache
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader-master\SimpleTrader.FinancialModelingPrepAPI\obj\Debug\netcoreapp3.0\SimpleTrader.FinancialModelingPrepAPI.AssemblyInfo.cs
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader-master\SimpleTrader.FinancialModelingPrepAPI\obj\Debug\netcoreapp3.0\SimpleTrader.FinancialModelingPrepAPI.csproj.CoreCompileInputs.cache
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader-master\SimpleTrader.FinancialModelingPrepAPI\obj\Debug\netcoreapp3.0\SimpleTrader.FinancialModelingPrepAPI.csproj.CopyComplete
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader-master\SimpleTrader.FinancialModelingPrepAPI\obj\Debug\netcoreapp3.0\SimpleTrader.FinancialModelingPrepAPI.dll
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader-master\SimpleTrader.FinancialModelingPrepAPI\obj\Debug\netcoreapp3.0\SimpleTrader.FinancialModelingPrepAPI.pdb
