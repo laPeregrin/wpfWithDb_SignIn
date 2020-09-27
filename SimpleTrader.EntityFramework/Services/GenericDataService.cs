@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace SimpleTrader.EntityFramework.Services
 {
-    public class GenericDataService<T> : IDataService<T> where T : DomainObject
+    public class GenericDataService<T> : IAuthenticationService<T> where T : DomainObject
     {
         private readonly SimpleTraderDbContextFactory _contextFactory;
         private readonly NonQueryDataService<T> _nonQueryDataService;

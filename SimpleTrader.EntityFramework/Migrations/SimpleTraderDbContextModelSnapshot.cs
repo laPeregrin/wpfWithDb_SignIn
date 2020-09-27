@@ -67,7 +67,7 @@ namespace SimpleTrader.EntityFramework.Migrations
 
                     b.Property<string>("Email");
 
-                    b.Property<string>("Password");
+                    b.Property<string>("PasswordHash");
 
                     b.Property<string>("Username");
 
