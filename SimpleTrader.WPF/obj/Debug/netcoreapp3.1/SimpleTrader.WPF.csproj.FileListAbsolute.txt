@@ -5,6 +5,13 @@ W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netc
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\SimpleTrader.WPF.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\SimpleTrader.WPF.pdb
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Core.dll
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Abstractions.dll
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Core.dll
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.dll
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Abstractions.dll
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Extensions.dll
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.WebUtilities.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
@@ -19,8 +26,10 @@ W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netc
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.Extensions.ObjectPool.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
@@ -29,6 +38,7 @@ W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netc
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.Net.Http.Headers.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll

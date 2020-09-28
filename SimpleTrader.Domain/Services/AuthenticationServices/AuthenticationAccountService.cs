@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace SimpleTrader.Domain.Services.AuthenticationServices
 {
-    class AuthenticationService : IAuthenticationService
+    public class AuthenticationAccountService : IAuthenticationAccountService
     {
         private readonly IDataService<Account> _accountService;
 
 
 
-        public AuthenticationService(IDataService<Account> accountService)
+        public AuthenticationAccountService(IDataService<Account> accountService)
         {
             _accountService = accountService;
         }

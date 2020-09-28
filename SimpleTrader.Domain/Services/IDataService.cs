@@ -1,11 +1,12 @@
-﻿using System;
+﻿using SimpleTrader.Domain.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace SimpleTrader.Domain.Services
 {
-    public interface IDataService<T>
+    public interface IDataService<T> where T : DomainObject
     {
         Task<IEnumerable<T>> GetAll();
 

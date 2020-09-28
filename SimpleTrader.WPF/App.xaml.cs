@@ -1,15 +1,9 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.DependencyInjection;
 using SimpleTrader.Domain.Models;
 using SimpleTrader.Domain.Services;
+using SimpleTrader.Domain.Services.AuthenticationServices;
 using SimpleTrader.Domain.Services.TransactionServices;
 using SimpleTrader.EntityFramework;
 using SimpleTrader.EntityFramework.Services;
@@ -33,6 +27,8 @@ namespace SimpleTrader.WPF
             window.Show();
 
             base.OnStartup(e);
+
+            
         }
 
         private IServiceProvider CreateServiceProvider()
@@ -40,8 +36,8 @@ namespace SimpleTrader.WPF
             IServiceCollection services = new ServiceCollection();
 
             services.AddSingleton<SimpleTraderDbContextFactory>();
-            services.AddSingleton<IAuthenticationService, AuthenticationService>();
-            services.AddSingleton<IDataService<User>, AccountDataService>();
+            services.AddSingleton<IAuthenticationAccountService, AuthenticationAccountService>();
+            services.AddSingleton<IDataService<Account>, AccountDataService>();
             services.AddSingleton<IStockPriceService, StockPriceService>();
             services.AddSingleton<IBuyStockService, BuyStockService>();
             services.AddSingleton<IMajorIndexService, MajorIndexService>();
