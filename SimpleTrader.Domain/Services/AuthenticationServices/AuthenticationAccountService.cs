@@ -9,20 +9,27 @@ namespace SimpleTrader.Domain.Services.AuthenticationServices
 {
     public class AuthenticationAccountService : IAuthenticationAccountService
     {
-        private readonly IDataService<Account> _accountService;
 
+        private readonly IAccountService _accountService;
+        private readonly IPasswordHasher _hasher;
 
-
-        public AuthenticationAccountService(IDataService<Account> accountService)
+        public AuthenticationAccountService(IAccountService accountService, IPasswordHasher passwordHasher)
         {
+            _hasher = new PasswordHasher();
             _accountService = accountService;
         }
 
 
 
-        public Task<Account> Login(string sername, string assword)
+        public async Task<Account> Login(string username, string password)
         {
-            throw new NotImplementedException();
+            Account storedAccount = await _accountService.GetByUserName(username);
+            PasswordVerificationResult passswordsRsult = _hasher.VerifyHashedPassword(storedAccount.AccountHolder.PasswordHash, password);
+            if (passswordsRsult != PasswordVerificationResult.Success)
+            {
+                throw new InvalidPasswordException();
+            }
+            return storedAccount;
         }
 
         public async Task<bool> Register(string email, string username, string password, string confirmPassword)
@@ -30,23 +37,35 @@ namespace SimpleTrader.Domain.Services.AuthenticationServices
             bool success = false;
             if (password.Equals(confirmPassword))
             {
-                
-                IPasswordHasher hasher = new PasswordHasher();
-                string hashedPassword = hasher.HashPassword(password);
-
-                User user = new User()
-                {
-
-                    Email = email,
-                    Username = username,
-                    PasswordHash = hashedPassword
-                };
-                Account account = new Account()
-                {
-                    AccountHolder = user
-                };
-                await _accountService.Create(account);
+                throw new Exception();
             }
+            Account emailUser = await _accountService.GetByEmail(email);
+            if(emailUser != null)
+            {
+                throw new Exception();
+            }
+            Account userName = await _accountService.GetByUserName(username);
+            if(userName != null)
+            {
+                throw new Exception();
+            }
+            string hashedPassword = _hasher.HashPassword(password);
+
+            User user = new User()
+            {
+
+                Email = email,
+                Username = username,
+                PasswordHash = hashedPassword,
+                DatedJoined = DateTime.Now
+
+            };
+            Account account = new Account()
+            {
+                AccountHolder = user
+            };
+            await _accountService.Create(account);
+
 
             return success;
         }

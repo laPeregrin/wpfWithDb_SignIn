@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows;
+using Microsoft.AspNet.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using SimpleTrader.Domain.Models;
 using SimpleTrader.Domain.Services;
@@ -28,6 +29,9 @@ namespace SimpleTrader.WPF
 
             base.OnStartup(e);
 
+            IAuthenticationAccountService test2 = serviceProvider.GetRequiredService<IAuthenticationAccountService>();
+
+            test2.Login("username_test", "password_test");
             
         }
 
@@ -38,9 +42,12 @@ namespace SimpleTrader.WPF
             services.AddSingleton<SimpleTraderDbContextFactory>();
             services.AddSingleton<IAuthenticationAccountService, AuthenticationAccountService>();
             services.AddSingleton<IDataService<Account>, AccountDataService>();
+            services.AddSingleton<IAccountService, AccountDataService>();
             services.AddSingleton<IStockPriceService, StockPriceService>();
             services.AddSingleton<IBuyStockService, BuyStockService>();
             services.AddSingleton<IMajorIndexService, MajorIndexService>();
+
+            services.AddSingleton<IPasswordHasher, PasswordHasher>();
 
             services.AddSingleton<IRootSimpleTraderViewModelFactory, RootSimpleTraderViewModelFactory>();
             services.AddSingleton<ISimpleTraderViewModelFactory<HomeViewModel>, HomeViewModelFactory>();
