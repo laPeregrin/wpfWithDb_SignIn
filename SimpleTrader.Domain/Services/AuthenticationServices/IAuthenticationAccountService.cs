@@ -6,9 +6,17 @@ using System.Threading.Tasks;
 
 namespace SimpleTrader.Domain.Services.AuthenticationServices
 {
+    public enum RegistrationResult
+    {
+        Success,
+        PasswordsDoNotMatch,
+        EmailAlreadyExist,
+        UserNameAlreadyExists
+    }
+
     public interface IAuthenticationAccountService
     {
-        Task<bool> Register(string email, string username, string password, string confirmPassword);
+        Task<RegistrationResult> Register(string email, string username, string password, string confirmPassword);
         Task<Account> Login(string sername, string assword);
     }
 }

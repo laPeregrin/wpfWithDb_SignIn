@@ -18,21 +18,21 @@ namespace SimpleTrader.Domain.Tests.Services.AuthenticationAccountServices
     {
         private Mock<IPasswordHasher> _mockPasswordHasher;
         private Mock<IAccountService> _mockAccountService;
-        private  AuthenticationAccountService testService;
+        private AuthenticationAccountService testService;
         [SetUp]
         public void SetUp()
         {
-             _mockPasswordHasher = new Mock<IPasswordHasher>();
-             _mockAccountService = new Mock<IAccountService>();
+            _mockPasswordHasher = new Mock<IPasswordHasher>();
+            _mockAccountService = new Mock<IAccountService>();
             testService = new AuthenticationAccountService(_mockAccountService.Object, _mockPasswordHasher.Object);
         }
 
         [Test]
         public async Task Login_WithCorrectPasswordForExistingUsername_ReturnsAccountForCorrectUsername()
         {
-            string expectedUsername = "testuser";
-            string password = "testpassword";
-            _mockAccountService.Setup(s => s.GetByUserName(expectedUsername)).ReturnsAsync(new Account() { AccountHolder = new User() { Username = expectedUsername } });
+            string expectedUsername = "usernametest";
+            string password = "usernametest";
+            _mockAccountService.Setup(s => s.GetByUserName(expectedUsername)).ReturnsAsync(new Account() { AccountHolder = new User() { Username = expectedUsername} });
             _mockPasswordHasher.Setup(s => s.VerifyHashedPassword(It.IsAny<string>(), password)).Returns(PasswordVerificationResult.Success);
 
             Account account = await testService.Login(expectedUsername, password);
@@ -61,11 +61,32 @@ namespace SimpleTrader.Domain.Tests.Services.AuthenticationAccountServices
 
 
             //Act
-           InvalidPasswordException exception = Assert.ThrowsAsync<InvalidPasswordException>(()=> testService.Login(ExpectedUsername, ExpectedPassword));
+            InvalidPasswordException exception = Assert.ThrowsAsync<InvalidPasswordException>(() => testService.Login(ExpectedUsername, ExpectedPassword));
 
             //Assert
             string ActualUserName = exception.Username;
             Assert.AreEqual(ExpectedUsername, ActualUserName);
         }
+
+        [Test]
+        public void Login_WithNonExcistingUser_ThrowInvalidExceptionPasswordForExcistingUser()
+        {
+            //Arrange
+            string ExpectedUsername = "usernametest";
+            string ExpectedPassword = "passwordtest";
+
+
+            _mockPasswordHasher.Setup(s => s.VerifyHashedPassword(It.IsAny<string>(), ExpectedPassword)).Returns(PasswordVerificationResult.Failed);
+
+
+            //Act
+            UserNotFoundException exception = Assert.ThrowsAsync<UserNotFoundException>(() => testService.Login(ExpectedUsername, ExpectedPassword));
+
+            //Assert
+            string ActualUserName = exception.Username;
+            Assert.AreEqual(ExpectedUsername, ActualUserName);
+        }
+
     }
 }
+

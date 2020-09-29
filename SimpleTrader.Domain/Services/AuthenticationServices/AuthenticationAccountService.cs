@@ -41,42 +41,46 @@ namespace SimpleTrader.Domain.Services.AuthenticationServices
             return storedAccount;
         }
 
-        public async Task<bool> Register(string email, string username, string password, string confirmPassword)
+        public async Task<RegistrationResult> Register(string email, string username, string password, string confirmPassword)
         {
-            bool success = false;
-            if (password.Equals(confirmPassword))
+            RegistrationResult result = RegistrationResult.Success;
+
+            if (!password.Equals(confirmPassword))
             {
-                throw new Exception();
+                result = RegistrationResult.PasswordsDoNotMatch;
             }
             Account emailUser = await _accountService.GetByEmail(email);
             if(emailUser != null)
             {
-                throw new Exception();
+                result = RegistrationResult.EmailAlreadyExist;
             }
             Account userName = await _accountService.GetByUserName(username);
             if(userName != null)
             {
-                throw new Exception();
+                result = RegistrationResult.UserNameAlreadyExists;
             }
-            string hashedPassword = _hasher.HashPassword(password);
-
-            User user = new User()
+            if(result==RegistrationResult.Success)
             {
+                string hashedPassword = _hasher.HashPassword(password);
 
-                Email = email,
-                Username = username,
-                PasswordHash = hashedPassword,
-                DatedJoined = DateTime.Now
+                User user = new User()
+                {
 
-            };
-            Account account = new Account()
-            {
-                AccountHolder = user
-            };
-            await _accountService.Create(account);
+                    Email = email,
+                    Username = username,
+                    PasswordHash = hashedPassword,
+                    DatedJoined = DateTime.Now
 
-
-            return success;
+                };
+                Account account = new Account()
+                {
+                    AccountHolder = user
+                };
+                await _accountService.Create(account);
+            }
+            return result;
         }
+
+        
     }
 }

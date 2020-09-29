@@ -26,7 +26,7 @@ namespace SimpleTrader.WPF
 
             Window window = serviceProvider.GetRequiredService<MainWindow>();
             window.Show();
-
+           
             base.OnStartup(e);
         }
 
