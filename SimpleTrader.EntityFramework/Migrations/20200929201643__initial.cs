@@ -1,10 +1,9 @@
 ﻿using System;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace SimpleTrader.EntityFramework.Migrations
 {
-    public partial class _passwordHash : Migration
+    public partial class _initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,7 +12,7 @@ namespace SimpleTrader.EntityFramework.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Email = table.Column<string>(nullable: true),
                     Username = table.Column<string>(nullable: true),
                     PasswordHash = table.Column<string>(nullable: true),
@@ -29,7 +28,7 @@ namespace SimpleTrader.EntityFramework.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     AccountHolderId = table.Column<int>(nullable: true),
                     Balance = table.Column<double>(nullable: false)
                 },
@@ -49,11 +48,11 @@ namespace SimpleTrader.EntityFramework.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     AccountId = table.Column<int>(nullable: true),
                     IsPurchase = table.Column<bool>(nullable: false),
                     Asset_Symbol = table.Column<string>(nullable: true),
-                    Asset_PricePerShare = table.Column<double>(nullable: false),
+                    Asset_PricePerShare = table.Column<double>(nullable: true),
                     Shares = table.Column<int>(nullable: false),
                     DateProcessed = table.Column<DateTime>(nullable: false)
                 },

@@ -26,36 +26,39 @@ namespace SimpleTrader.WPF
 
             Window window = serviceProvider.GetRequiredService<MainWindow>();
             window.Show();
-           
+            IAuthenticationAccountService accountService = serviceProvider.GetRequiredService<IAuthenticationAccountService>();
+            var rez = accountService.Login( "testUsername", "testPassword");
+            var rez1 = rez.Id;
+
             base.OnStartup(e);
-        }
-
-        private IServiceProvider CreateServiceProvider()
-        {
-            IServiceCollection services = new ServiceCollection();
-
-            services.AddSingleton<SimpleTraderDbContextFactory>();
-            services.AddSingleton<IAuthenticationAccountService, AuthenticationAccountService>();
-            services.AddSingleton<IDataService<Account>, AccountDataService>();
-            services.AddSingleton<IAccountService, AccountDataService>();
-            services.AddSingleton<IStockPriceService, StockPriceService>();
-            services.AddSingleton<IBuyStockService, BuyStockService>();
-            services.AddSingleton<IMajorIndexService, MajorIndexService>();
-
-            services.AddSingleton<IPasswordHasher, PasswordHasher>();
-
-            services.AddSingleton<IRootSimpleTraderViewModelFactory, RootSimpleTraderViewModelFactory>();
-            services.AddSingleton<ISimpleTraderViewModelFactory<HomeViewModel>, HomeViewModelFactory>();
-            services.AddSingleton<ISimpleTraderViewModelFactory<PortfolioViewModel>, PortfolioViewModelFactory>();
-            services.AddSingleton<ISimpleTraderViewModelFactory<MajorIndexListingViewModel>, MajorIndexListingViewModelFactory>();
-
-            services.AddScoped<INavigator, Navigator>();
-            services.AddScoped<MainViewModel>();
-            services.AddScoped<BuyViewModel>();
-
-            services.AddScoped<MainWindow>(s => new MainWindow(s.GetRequiredService<MainViewModel>()));
-
-            return services.BuildServiceProvider();
-        }
     }
+
+    private IServiceProvider CreateServiceProvider()
+    {
+        IServiceCollection services = new ServiceCollection();
+
+        services.AddSingleton<SimpleTraderDbContextFactory>();
+        services.AddSingleton<IAuthenticationAccountService, AuthenticationAccountService>();
+        services.AddSingleton<IDataService<Account>, AccountDataService>();
+        services.AddSingleton<IAccountService, AccountDataService>();
+        services.AddSingleton<IStockPriceService, StockPriceService>();
+        services.AddSingleton<IBuyStockService, BuyStockService>();
+        services.AddSingleton<IMajorIndexService, MajorIndexService>();
+
+        services.AddSingleton<IPasswordHasher, PasswordHasher>();
+
+        services.AddSingleton<IRootSimpleTraderViewModelFactory, RootSimpleTraderViewModelFactory>();
+        services.AddSingleton<ISimpleTraderViewModelFactory<HomeViewModel>, HomeViewModelFactory>();
+        services.AddSingleton<ISimpleTraderViewModelFactory<PortfolioViewModel>, PortfolioViewModelFactory>();
+        services.AddSingleton<ISimpleTraderViewModelFactory<MajorIndexListingViewModel>, MajorIndexListingViewModelFactory>();
+
+        services.AddScoped<INavigator, Navigator>();
+        services.AddScoped<MainViewModel>();
+        services.AddScoped<BuyViewModel>();
+
+        services.AddScoped<MainWindow>(s => new MainWindow(s.GetRequiredService<MainViewModel>()));
+
+        return services.BuildServiceProvider();
+    }
+}
 }
