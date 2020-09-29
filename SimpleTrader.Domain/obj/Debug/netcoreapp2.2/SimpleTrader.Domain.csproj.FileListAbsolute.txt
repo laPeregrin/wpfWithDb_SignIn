@@ -15,4 +15,3 @@ W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain\obj\Debug\n
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain\obj\Debug\netcoreapp2.2\SimpleTrader.Domain.csproj.CoreCompileInputs.cache
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain\obj\Debug\netcoreapp2.2\SimpleTrader.Domain.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain\obj\Debug\netcoreapp2.2\SimpleTrader.Domain.pdb
-W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain\obj\Debug\netcoreapp2.2\SimpleTrader.Domain.csprojAssemblyReference.cache

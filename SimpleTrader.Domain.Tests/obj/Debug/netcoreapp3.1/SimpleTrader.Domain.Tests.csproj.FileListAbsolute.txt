@@ -6,6 +6,8 @@ W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\bin\D
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\bin\Debug\netcoreapp3.1\SimpleTrader.Domain.Tests.runtimeconfig.json
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\bin\Debug\netcoreapp3.1\SimpleTrader.Domain.Tests.runtimeconfig.dev.json
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\bin\Debug\netcoreapp3.1\SimpleTrader.Domain.Tests.dll
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\bin\Debug\netcoreapp3.1\SimpleTrader.Domain.Tests.pdb
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\bin\Debug\netcoreapp3.1\Castle.Core.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Core.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\bin\Debug\netcoreapp3.1\Microsoft.DotNet.InternalAbstractions.dll
@@ -17,6 +19,7 @@ W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\bin\D
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.Utilities.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.Common.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\bin\Debug\netcoreapp3.1\testhost.dll
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\bin\Debug\netcoreapp3.1\Moq.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\bin\Debug\netcoreapp3.1\nunit.framework.dll
@@ -91,11 +94,8 @@ W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\bin\D
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\obj\Debug\netcoreapp3.1\SimpleTrader.Domain.Tests.csprojAssemblyReference.cache
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\obj\Debug\netcoreapp3.1\SimpleTrader.Domain.Tests.AssemblyInfoInputs.cache
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\obj\Debug\netcoreapp3.1\SimpleTrader.Domain.Tests.AssemblyInfo.cs
-W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\obj\Debug\netcoreapp3.1\SimpleTrader.Domain.Tests.csproj.CopyComplete
-W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\obj\Debug\netcoreapp3.1\SimpleTrader.Domain.Tests.genruntimeconfig.cache
-W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\bin\Debug\netcoreapp3.1\SimpleTrader.Domain.Tests.pdb
-W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\bin\Debug\netcoreapp3.1\Castle.Core.dll
-W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\bin\Debug\netcoreapp3.1\Moq.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\obj\Debug\netcoreapp3.1\SimpleTrader.Domain.Tests.csproj.CoreCompileInputs.cache
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\obj\Debug\netcoreapp3.1\SimpleTrader.Domain.Tests.csproj.CopyComplete
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\obj\Debug\netcoreapp3.1\SimpleTrader.Domain.Tests.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\obj\Debug\netcoreapp3.1\SimpleTrader.Domain.Tests.pdb
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.Domain.Tests\obj\Debug\netcoreapp3.1\SimpleTrader.Domain.Tests.genruntimeconfig.cache

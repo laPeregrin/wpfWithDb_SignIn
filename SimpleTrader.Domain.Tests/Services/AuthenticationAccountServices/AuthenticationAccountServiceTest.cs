@@ -32,7 +32,7 @@ namespace SimpleTrader.Domain.Tests.Services.AuthenticationAccountServices
         {
             string expectedUsername = "usernametest";
             string password = "usernametest";
-            _mockAccountService.Setup(s => s.GetByUserName(expectedUsername)).ReturnsAsync(new Account() { AccountHolder = new User() { Username = expectedUsername} });
+            _mockAccountService.Setup(s => s.GetByUserName(expectedUsername)).ReturnsAsync(new Account() { AccountHolder = new User() { Username = expectedUsername } });
             _mockPasswordHasher.Setup(s => s.VerifyHashedPassword(It.IsAny<string>(), password)).Returns(PasswordVerificationResult.Success);
 
             Account account = await testService.Login(expectedUsername, password);
@@ -86,7 +86,51 @@ namespace SimpleTrader.Domain.Tests.Services.AuthenticationAccountServices
             string ActualUserName = exception.Username;
             Assert.AreEqual(ExpectedUsername, ActualUserName);
         }
+        [Test]
+        public async Task Register_WithPasswordsNotMatching_ReturnsPasswordsDoNotMatch()
+        {
+            string password = "testpassword";
+            string confirmPassword = "confirmtestpassword";
+            RegistrationResult expected = RegistrationResult.PasswordsDoNotMatch;
 
+            RegistrationResult actual = await testService.Register(It.IsAny<string>(), It.IsAny<string>(), password, confirmPassword);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public async Task Register_WithAlreadyExistingEmail_ReturnsEmailAlreadyExists()
+        {
+            string email = "test@gmail.com";
+            _mockAccountService.Setup(s => s.GetByEmail(email)).ReturnsAsync(new Account());
+            RegistrationResult expected = RegistrationResult.EmailAlreadyExist;
+
+            RegistrationResult actual = await testService.Register(email, It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>());
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public async Task Register_WithAlreadyExistingUsername_ReturnsUsernameAlreadyExists()
+        {
+            string username = "testuser";
+            _mockAccountService.Setup(s => s.GetByUserName(username)).ReturnsAsync(new Account());
+            RegistrationResult expected = RegistrationResult.UserNameAlreadyExists;
+
+            RegistrationResult actual = await testService.Register(It.IsAny<string>(), username, It.IsAny<string>(), It.IsAny<string>());
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public async Task Register_WithNonExistingUserAndMatchingPasswords_ReturnsSuccess()
+        {
+            RegistrationResult expected = RegistrationResult.Success;
+
+            RegistrationResult actual = await testService.Register(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>());
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
 

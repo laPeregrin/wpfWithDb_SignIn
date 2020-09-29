@@ -10,17 +10,14 @@ namespace SimpleTrader.Domain.Services.AuthenticationServices
 {
     public class AuthenticationAccountService : IAuthenticationAccountService
     {
-
         private readonly IAccountService _accountService;
-        private readonly IPasswordHasher _hasher;
+        private readonly IPasswordHasher _passwordHasher;
 
         public AuthenticationAccountService(IAccountService accountService, IPasswordHasher passwordHasher)
         {
-            _hasher = new PasswordHasher();
             _accountService = accountService;
+            _passwordHasher = passwordHasher;
         }
-
-
 
         public async Task<Account> Login(string username, string password)
         {
@@ -31,7 +28,7 @@ namespace SimpleTrader.Domain.Services.AuthenticationServices
                 throw new UserNotFoundException(username);
             }
 
-            PasswordVerificationResult passwordResult = _hasher.VerifyHashedPassword(storedAccount.AccountHolder.PasswordHash, password);
+            PasswordVerificationResult passwordResult = _passwordHasher.VerifyHashedPassword(storedAccount.AccountHolder.PasswordHash, password);
 
             if (passwordResult != PasswordVerificationResult.Success)
             {
@@ -45,42 +42,44 @@ namespace SimpleTrader.Domain.Services.AuthenticationServices
         {
             RegistrationResult result = RegistrationResult.Success;
 
-            if (!password.Equals(confirmPassword))
+            if (password != confirmPassword)
             {
                 result = RegistrationResult.PasswordsDoNotMatch;
             }
-            Account emailUser = await _accountService.GetByEmail(email);
-            if(emailUser != null)
+
+            Account emailAccount = await _accountService.GetByEmail(email);
+            if (emailAccount != null)
             {
                 result = RegistrationResult.EmailAlreadyExist;
             }
-            Account userName = await _accountService.GetByUserName(username);
-            if(userName != null)
+
+            Account usernameAccount = await _accountService.GetByUserName(username);
+            if (usernameAccount != null)
             {
                 result = RegistrationResult.UserNameAlreadyExists;
             }
-            if(result==RegistrationResult.Success)
+
+            if (result == RegistrationResult.Success)
             {
-                string hashedPassword = _hasher.HashPassword(password);
+                string hashedPassword = _passwordHasher.HashPassword(password);
 
                 User user = new User()
                 {
-
                     Email = email,
                     Username = username,
                     PasswordHash = hashedPassword,
                     DatedJoined = DateTime.Now
-
                 };
+
                 Account account = new Account()
                 {
                     AccountHolder = user
                 };
+
                 await _accountService.Create(account);
             }
+
             return result;
         }
-
-        
     }
 }

@@ -4,6 +4,7 @@ W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netc
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\SimpleTrader.WPF.runtimeconfig.dev.json
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\SimpleTrader.WPF.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\SimpleTrader.WPF.pdb
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Castle.Core.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Core.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Abstractions.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Core.dll
@@ -39,6 +40,7 @@ W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netc
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Microsoft.Net.Http.Headers.dll
+W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Moq.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
@@ -87,5 +89,3 @@ W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\obj\Debug\netc
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\obj\Debug\netcoreapp3.1\SimpleTrader.WPF.dll
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\obj\Debug\netcoreapp3.1\SimpleTrader.WPF.pdb
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\obj\Debug\netcoreapp3.1\SimpleTrader.WPF.genruntimeconfig.cache
-W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Castle.Core.dll
-W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\bin\Debug\netcoreapp3.1\Moq.dll
