@@ -28,11 +28,6 @@ namespace SimpleTrader.WPF
             window.Show();
 
             base.OnStartup(e);
-
-            IAuthenticationAccountService test2 = serviceProvider.GetRequiredService<IAuthenticationAccountService>();
-
-            test2.Login("username_test", "password_test");
-            
         }
 
         private IServiceProvider CreateServiceProvider()

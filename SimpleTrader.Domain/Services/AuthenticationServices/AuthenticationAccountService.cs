@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNet.Identity;
+using SimpleTrader.Domain.Exceptions;
 using SimpleTrader.Domain.Models;
 using System;
 using System.Collections.Generic;
@@ -24,11 +25,19 @@ namespace SimpleTrader.Domain.Services.AuthenticationServices
         public async Task<Account> Login(string username, string password)
         {
             Account storedAccount = await _accountService.GetByUserName(username);
-            PasswordVerificationResult passswordsRsult = _hasher.VerifyHashedPassword(storedAccount.AccountHolder.PasswordHash, password);
-            if (passswordsRsult != PasswordVerificationResult.Success)
+
+            if (storedAccount == null)
             {
-                throw new InvalidPasswordException();
+                throw new UserNotFoundException(username);
             }
+
+            PasswordVerificationResult passwordResult = _hasher.VerifyHashedPassword(storedAccount.AccountHolder.PasswordHash, password);
+
+            if (passwordResult != PasswordVerificationResult.Success)
+            {
+                throw new InvalidPasswordException(username, password);
+            }
+
             return storedAccount;
         }
 
