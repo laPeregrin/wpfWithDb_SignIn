@@ -47,7 +47,7 @@ namespace SimpleTrader.EntityFramework.Services
             using (SimpleTraderDbContext context = _contextFactory.CreateDbContext())
             {
                 IEnumerable<Account> entities = await context.Accounts
-                    .Include(a=>a.AccountHolder)
+                    .Include(a => a.AccountHolder)
                     .Include(a => a.AssetTransactions)
                     .ToListAsync();
                 return entities;
@@ -59,9 +59,9 @@ namespace SimpleTrader.EntityFramework.Services
             using (SimpleTraderDbContext context = _contextFactory.CreateDbContext())
             {
                 return await context.Accounts
-                     .Include(a => a.AccountHolder)
-                     .Include(a => a.AssetTransactions)
-                     .FirstOrDefaultAsync(a => a.AccountHolder.Email == email);
+                    .Include(a => a.AccountHolder)
+                    .Include(a => a.AssetTransactions)
+                    .FirstOrDefaultAsync(a => a.AccountHolder.Email == email);
             }
         }
 
@@ -70,9 +70,9 @@ namespace SimpleTrader.EntityFramework.Services
             using (SimpleTraderDbContext context = _contextFactory.CreateDbContext())
             {
                 return await context.Accounts
-                     .Include(a => a.AccountHolder)
-                     .Include(a => a.AssetTransactions)
-                     .FirstOrDefaultAsync(a => a.AccountHolder.Username == username);
+                    .Include(a => a.AccountHolder)
+                    .Include(a => a.AssetTransactions)
+                    .FirstOrDefaultAsync(a => a.AccountHolder.Username == username);
             }
         }
 

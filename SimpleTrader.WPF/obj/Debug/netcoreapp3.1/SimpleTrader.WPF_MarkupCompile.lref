@@ -1,4 +1,4 @@
-﻿W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+﻿
 FW:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\App.xaml;;
 FW:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\Controls\MajorIndexCard.xaml;;
 FW:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\Controls\MajorIndexListing.xaml;;
@@ -8,5 +8,6 @@ FW:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\Styles\Common
 FW:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\Styles\NavigationBar.xaml;;
 FW:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\Views\BuyView.xaml;;
 FW:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\Views\HomeView.xaml;;
+FW:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\Views\LoginView.xaml;;
 FW:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\Views\PortfolioView.xaml;;
 
