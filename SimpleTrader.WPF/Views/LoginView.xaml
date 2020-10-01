@@ -25,7 +25,7 @@
             <TextBlock Grid.Row="0" FontSize="48" HorizontalAlignment="Center" Text="Simple Trader"/>
 
             <TextBlock Grid.Row="1" Margin="0 10" FontSize="18" FontWeight="Thin" HorizontalAlignment="Center" 
-                       Text="The world's simplest stock trading application."/>
+                       Text="Earn money for your dream, but its me - Dio."/>
 
             <Grid Grid.Row="2" Margin="0 20">
                 <Grid.RowDefinitions>
