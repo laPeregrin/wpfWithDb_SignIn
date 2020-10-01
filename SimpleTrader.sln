@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleTrader.WPF", "SimpleT
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleTrader.FinancialModelingPrepAPI", "SimpleTrader.FinancialModelingPrepAPI\SimpleTrader.FinancialModelingPrepAPI.csproj", "{945DCC0D-FADC-460A-8A75-6430D77B8075}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleTrader.Domain.Tests", "SimpleTrader.Domain.Tests\SimpleTrader.Domain.Tests.csproj", "{5919CDA3-139B-4473-82CE-344972C6BBDF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleTrader.Domain.Tests", "SimpleTrader.Domain.Tests\SimpleTrader.Domain.Tests.csproj", "{D1D4CA94-275E-4C10-A784-C128AEA79130}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{945DCC0D-FADC-460A-8A75-6430D77B8075}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{945DCC0D-FADC-460A-8A75-6430D77B8075}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{945DCC0D-FADC-460A-8A75-6430D77B8075}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5919CDA3-139B-4473-82CE-344972C6BBDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5919CDA3-139B-4473-82CE-344972C6BBDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5919CDA3-139B-4473-82CE-344972C6BBDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5919CDA3-139B-4473-82CE-344972C6BBDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1D4CA94-275E-4C10-A784-C128AEA79130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1D4CA94-275E-4C10-A784-C128AEA79130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1D4CA94-275E-4C10-A784-C128AEA79130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1D4CA94-275E-4C10-A784-C128AEA79130}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

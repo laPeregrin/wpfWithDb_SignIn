@@ -10,25 +10,19 @@ namespace SimpleTrader.Domain.Exceptions
         public string Username { get; set; }
         public string Password { get; set; }
 
-        public InvalidPasswordException(string message, string userName, string userPassword) : base(message)
-        {
-            Username = userName;
-            Password = userPassword;
-        }
-
-        public InvalidPasswordException(string message, Exception innerException, string userName, string userPassword) : base(message, innerException)
-        {
-            Username = userName;
-            Password = userPassword;
-        }
-
-        protected InvalidPasswordException(SerializationInfo info, StreamingContext context, string userName, string userPassword) : base(info, context)
-        {
-            Username = userName;
-            Password = userPassword;
-        }
-
         public InvalidPasswordException(string username, string password)
+        {
+            Username = username;
+            Password = password;
+        }
+
+        public InvalidPasswordException(string message, string username, string password) : base(message)
+        {
+            Username = username;
+            Password = password;
+        }
+
+        public InvalidPasswordException(string message, Exception innerException, string username, string password) : base(message, innerException)
         {
             Username = username;
             Password = password;

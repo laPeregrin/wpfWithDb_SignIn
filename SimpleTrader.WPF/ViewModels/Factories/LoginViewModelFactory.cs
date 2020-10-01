@@ -7,16 +7,16 @@ namespace SimpleTrader.WPF.ViewModels.Factories
 {
     public class LoginViewModelFactory : ISimpleTraderViewModelFactory<LoginViewModel>
     {
-        private readonly IAuthenticator authenticator;
+        private readonly IAuthenticator _authenticator;
 
         public LoginViewModelFactory(IAuthenticator authenticator)
         {
-            this.authenticator = authenticator;
+            _authenticator = authenticator;
         }
 
         public LoginViewModel CreateViewModel()
         {
-            return new LoginViewModel(authenticator);
+            return new LoginViewModel(_authenticator);
         }
     }
 }

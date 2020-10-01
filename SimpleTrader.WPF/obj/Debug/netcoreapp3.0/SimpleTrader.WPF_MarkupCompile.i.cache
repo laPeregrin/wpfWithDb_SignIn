@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_0
 W:\programs\git_repos\Wpf_repos\wpfWithDb_SignIn\SimpleTrader.WPF\App.xaml
-9112161404
+10-1094578554
 
-291532710190
-210-1229354831
-Controls\MajorIndexCard.xaml;Controls\MajorIndexListing.xaml;Controls\NavigationBar.xaml;MainWindow.xaml;Styles\Common.xaml;Styles\NavigationBar.xaml;Views\BuyView.xaml;Views\HomeView.xaml;Views\PortfolioView.xaml;
+35-1722984911
+215-1792412396
+Controls\MajorIndexCard.xaml;Controls\MajorIndexListing.xaml;Controls\NavigationBar.xaml;MainWindow.xaml;Styles\Common.xaml;Styles\NavigationBar.xaml;Views\BuyView.xaml;Views\HomeView.xaml;Views\LoginView.xaml;Views\PortfolioView.xaml;
 
-False
+True
 

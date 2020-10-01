@@ -12,9 +12,10 @@ namespace SimpleTrader.WPF.ViewModels.Factories
         private readonly ISimpleTraderViewModelFactory<LoginViewModel> _loginViewModelFactory;
         private readonly BuyViewModel _buyViewModel;
 
-        public RootSimpleTraderViewModelFactory(ISimpleTraderViewModelFactory<HomeViewModel> homeViewModelFactory, 
+        public RootSimpleTraderViewModelFactory(ISimpleTraderViewModelFactory<HomeViewModel> homeViewModelFactory,
             ISimpleTraderViewModelFactory<PortfolioViewModel> portfolioViewModelFactory,
-            BuyViewModel buyViewModel, ISimpleTraderViewModelFactory<LoginViewModel> loginViewModelFactory)
+            BuyViewModel buyViewModel, 
+            ISimpleTraderViewModelFactory<LoginViewModel> loginViewModelFactory)
         {
             _homeViewModelFactory = homeViewModelFactory;
             _portfolioViewModelFactory = portfolioViewModelFactory;

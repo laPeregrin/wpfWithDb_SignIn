@@ -399,7 +399,7 @@
           }
         }
       },
-      "Moq/4.14.5": {
+      "Moq/4.13.1": {
         "type": "package",
         "dependencies": {
           "Castle.Core": "4.4.0",
@@ -1791,10 +1791,10 @@
         "runtimes/win/lib/netstandard1.3/Microsoft.Win32.Registry.dll"
       ]
     },
-    "Moq/4.14.5": {
-      "sha512": "g/TLN+z6Fjd1E3DAUDbBI3nZcNDUXGKGEmImYqJdZ9TzvjME9KkE4BfV4vsKSXm3Of/C0y+rQKW3/5QSCeTUPA==",
+    "Moq/4.13.1": {
+      "sha512": "ic4m9/b10tz9oRB1Oi5bW7E/FS6Pd2SH5OJFhlmhUJkQhiV5FyrIRxVUEaG5KOpSpcfSPGAVW4rRZt6OzrS5zg==",
       "type": "package",
-      "path": "moq/4.14.5",
+      "path": "moq/4.13.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1802,7 +1802,7 @@
         "lib/net45/Moq.xml",
         "lib/netstandard2.0/Moq.dll",
         "lib/netstandard2.0/Moq.xml",
-        "moq.4.14.5.nupkg.sha512",
+        "moq.4.13.1.nupkg.sha512",
         "moq.nuspec"
       ]
     },
@@ -4849,7 +4849,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.NET.Test.Sdk >= 16.4.0",
-      "Moq >= 4.14.5",
+      "Moq >= 4.13.1",
       "NUnit3TestAdapter >= 3.15.1",
       "SimpleTrader.Domain >= 1.0.0",
       "nunit >= 3.12.0"
@@ -4907,7 +4907,7 @@
           },
           "Moq": {
             "target": "Package",
-            "version": "[4.14.5, )"
+            "version": "[4.13.1, )"
           },
           "NUnit3TestAdapter": {
             "target": "Package",

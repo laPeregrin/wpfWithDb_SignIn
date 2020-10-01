@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using SimpleTrader.Domain.Models;
 using SimpleTrader.Domain.Services;
 using SimpleTrader.EntityFramework.Services.Common;
@@ -65,7 +66,7 @@ namespace SimpleTrader.EntityFramework.Services
             }
         }
 
-        public async Task<Account> GetByUserName(string username)
+        public async Task<Account> GetByUsername(string username)
         {
             using (SimpleTraderDbContext context = _contextFactory.CreateDbContext())
             {

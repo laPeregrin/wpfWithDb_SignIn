@@ -12,10 +12,10 @@ namespace SimpleTrader.WPF.Commands
         private readonly LoginViewModel _loginViewModel;
         private readonly IAuthenticator _authenticator;
 
-        public LoginCommand( LoginViewModel loginViewModel, IAuthenticator authenticator)
+        public LoginCommand(LoginViewModel loginViewModel, IAuthenticator authenticator)
         {
-            _authenticator = authenticator;
             _loginViewModel = loginViewModel;
+            _authenticator = authenticator;
         }
 
         public event EventHandler CanExecuteChanged;
@@ -27,7 +27,7 @@ namespace SimpleTrader.WPF.Commands
 
         public async void Execute(object parameter)
         {
-            bool success = await _authenticator.Login(_loginViewModel.UserName, parameter.ToString() );
+            bool success = await _authenticator.Login(_loginViewModel.Username, parameter.ToString());
         }
     }
 }

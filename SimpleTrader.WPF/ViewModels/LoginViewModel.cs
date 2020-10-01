@@ -9,18 +9,25 @@ namespace SimpleTrader.WPF.ViewModels
 {
     public class LoginViewModel : ViewModelBase
     {
-        private string _userName;
+		private string _username;
+		public string Username
+		{
+			get
+			{
+				return _username;
+			}
+			set
+			{
+				_username = value;
+				OnPropertyChanged(nameof(Username));
+			}
+		}
 
-        public string UserName
-        {
-            get { return _userName; }
-            set { _userName = value; OnPropertyChanged(); }
-        }
-        public ICommand LoginCommand { get; }
+		public ICommand LoginCommand { get; }
 
-        public LoginViewModel(IAuthenticator authenticator)
-        {
-            LoginCommand = new LoginCommand(this, authenticator);
-        }
-    }
+		public LoginViewModel(IAuthenticator authenticator)
+		{
+			LoginCommand = new LoginCommand(this, authenticator);
+		}
+	}
 }

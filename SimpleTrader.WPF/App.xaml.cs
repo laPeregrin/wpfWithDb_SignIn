@@ -1,6 +1,4 @@
-﻿using System;
-using System.Windows;
-using Microsoft.AspNet.Identity;
+﻿using Microsoft.AspNet.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using SimpleTrader.Domain.Models;
 using SimpleTrader.Domain.Services;
@@ -13,6 +11,13 @@ using SimpleTrader.WPF.State.Authenticators;
 using SimpleTrader.WPF.State.Navigators;
 using SimpleTrader.WPF.ViewModels;
 using SimpleTrader.WPF.ViewModels.Factories;
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows;
 
 namespace SimpleTrader.WPF
 {
@@ -36,7 +41,7 @@ namespace SimpleTrader.WPF
             IServiceCollection services = new ServiceCollection();
 
             services.AddSingleton<SimpleTraderDbContextFactory>();
-            services.AddSingleton<IAuthenticationAccountService, AuthenticationAccountService>();
+            services.AddSingleton<IAuthenticationService, AuthenticationService>();
             services.AddSingleton<IDataService<Account>, AccountDataService>();
             services.AddSingleton<IAccountService, AccountDataService>();
             services.AddSingleton<IStockPriceService, StockPriceService>();

@@ -20,10 +20,12 @@ namespace SimpleTrader.WPF.Commands
             _viewModel = viewModel;
             _stockPriceService = stockPriceService;
         }
+
         public bool CanExecute(object parameter)
         {
             return true;
         }
+
         public async void Execute(object parameter)
         {
             try

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ynKHXzYN2f6Fo2X4BkPTGHQ/LO5dhgPjNMj7oQV0jpKH3i4bA+AcGiRSShdwqH4kfJ8dSkxuYq3ix4r17OaKzw==",
+  "dgSpecHash": "NIXb2u4GJQ8pJH+eXJ5ftFyoM5NTmnJF8O8DMqNPdEQhwvRCiD4sZDZ4Kb3nJTryrRZWJCOAK95LtPV0cpz/ZQ==",
   "success": true,
   "projectFilePath": "W:\\programs\\git_repos\\Wpf_repos\\wpfWithDb_SignIn\\SimpleTrader.Domain.Tests\\SimpleTrader.Domain.Tests.csproj",
   "expectedPackageFiles": [
@@ -16,7 +16,7 @@
     "C:\\Users\\Marshall\\.nuget\\packages\\microsoft.testplatform.testhost\\16.4.0\\microsoft.testplatform.testhost.16.4.0.nupkg.sha512",
     "C:\\Users\\Marshall\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Marshall\\.nuget\\packages\\microsoft.win32.registry\\4.3.0\\microsoft.win32.registry.4.3.0.nupkg.sha512",
-    "C:\\Users\\Marshall\\.nuget\\packages\\moq\\4.14.5\\moq.4.14.5.nupkg.sha512",
+    "C:\\Users\\Marshall\\.nuget\\packages\\moq\\4.13.1\\moq.4.13.1.nupkg.sha512",
     "C:\\Users\\Marshall\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
     "C:\\Users\\Marshall\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
     "C:\\Users\\Marshall\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",

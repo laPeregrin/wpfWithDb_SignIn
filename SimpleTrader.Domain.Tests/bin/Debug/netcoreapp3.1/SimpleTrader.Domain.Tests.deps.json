@@ -9,7 +9,7 @@
       "SimpleTrader.Domain.Tests/1.0.0": {
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "16.4.0",
-          "Moq": "4.14.5",
+          "Moq": "4.13.1",
           "NUnit3TestAdapter": "3.15.1",
           "SimpleTrader.Domain": "1.0.0",
           "NUnit": "3.12.0"
@@ -365,15 +365,15 @@
           "System.Runtime.InteropServices": "4.3.0"
         }
       },
-      "Moq/4.14.5": {
+      "Moq/4.13.1": {
         "dependencies": {
           "Castle.Core": "4.4.0",
           "System.Threading.Tasks.Extensions": "4.5.1"
         },
         "runtime": {
           "lib/netstandard2.0/Moq.dll": {
-            "assemblyVersion": "4.14.0.0",
-            "fileVersion": "4.14.5.0"
+            "assemblyVersion": "4.13.0.0",
+            "fileVersion": "4.13.1.0"
           }
         }
       },
@@ -1013,12 +1013,12 @@
       "path": "microsoft.win32.registry/4.3.0",
       "hashPath": "microsoft.win32.registry.4.3.0.nupkg.sha512"
     },
-    "Moq/4.14.5": {
+    "Moq/4.13.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-g/TLN+z6Fjd1E3DAUDbBI3nZcNDUXGKGEmImYqJdZ9TzvjME9KkE4BfV4vsKSXm3Of/C0y+rQKW3/5QSCeTUPA==",
-      "path": "moq/4.14.5",
-      "hashPath": "moq.4.14.5.nupkg.sha512"
+      "sha512": "sha512-ic4m9/b10tz9oRB1Oi5bW7E/FS6Pd2SH5OJFhlmhUJkQhiV5FyrIRxVUEaG5KOpSpcfSPGAVW4rRZt6OzrS5zg==",
+      "path": "moq/4.13.1",
+      "hashPath": "moq.4.13.1.nupkg.sha512"
     },
     "NETStandard.Library/2.0.0": {
       "type": "package",

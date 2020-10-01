@@ -45,8 +45,7 @@ namespace SimpleTrader.EntityFramework.Services.Common
         {
             using (SimpleTraderDbContext context = _contextFactory.CreateDbContext())
             {
-                T entity = await context.Set<T>()
-                    .FirstOrDefaultAsync((e) => e.Id == id);
+                T entity = await context.Set<T>().FirstOrDefaultAsync((e) => e.Id == id);
                 context.Set<T>().Remove(entity);
                 await context.SaveChangesAsync();
 

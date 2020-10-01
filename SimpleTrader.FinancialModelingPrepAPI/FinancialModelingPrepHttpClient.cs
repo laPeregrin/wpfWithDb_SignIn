@@ -13,6 +13,7 @@ namespace SimpleTrader.FinancialModelingPrepAPI
         {
             this.BaseAddress = new Uri("https://financialmodelingprep.com/api/v3/");
         }
+
         public async Task<T> GetAsync<T>(string uri)
         {
             HttpResponseMessage response = await GetAsync($"{uri}?apikey=2a95d7d7649183e5594d3c706d85ca52");
