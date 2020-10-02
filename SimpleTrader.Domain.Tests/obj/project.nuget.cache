@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NIXb2u4GJQ8pJH+eXJ5ftFyoM5NTmnJF8O8DMqNPdEQhwvRCiD4sZDZ4Kb3nJTryrRZWJCOAK95LtPV0cpz/ZQ==",
+  "dgSpecHash": "k3ItrR7EoDzK0LvrYXzaRa7o/uI0k6edlwZr77ovMKlHT/OjESZxLn7MIjkOprIUPbRipMUzHx/6XBolvrMnww==",
   "success": true,
   "projectFilePath": "W:\\programs\\git_repos\\Wpf_repos\\wpfWithDb_SignIn\\SimpleTrader.Domain.Tests\\SimpleTrader.Domain.Tests.csproj",
   "expectedPackageFiles": [
@@ -70,8 +70,7 @@
     "C:\\Users\\Marshall\\.nuget\\packages\\system.xml.xdocument\\4.0.11\\system.xml.xdocument.4.0.11.nupkg.sha512",
     "C:\\Users\\Marshall\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Marshall\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
-    "C:\\Users\\Marshall\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.3.0\\system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Marshall\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+    "C:\\Users\\Marshall\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.3.0\\system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
   ],
   "logs": [
     {
