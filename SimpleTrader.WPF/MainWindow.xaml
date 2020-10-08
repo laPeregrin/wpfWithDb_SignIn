@@ -8,7 +8,7 @@
         xmlns:controls="clr-namespace:SimpleTrader.WPF.Controls"
         
         mc:Ignorable="d"
-        Title="Simple Trader" Height="500" Width="700">
+        Title="Simple Trader" Height="560" Width="710" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
@@ -19,18 +19,18 @@
             <Grid.Style>
                 <Style TargetType="Grid">
                     <Style.Triggers>
-                        <DataTrigger Binding="{Binding Authenticator.IsLoggedIn}" Value="False">
+                        <DataTrigger Binding="{Binding IsLoggedIn}" Value="False">
                             <Setter Property="Visibility" Value="Collapsed"/>
                         </DataTrigger>
                     </Style.Triggers>
                 </Style>
             </Grid.Style>
-            
+
             <controls:NavigationBar/>
         </Grid>
-        
+
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
-            <ContentControl Content="{Binding Navigator.CurrentViewModel}"/>
+            <ContentControl Content="{Binding CurrentViewModel}"/>
         </ScrollViewer>
     </Grid>
 </Window>
