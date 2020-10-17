@@ -8,7 +8,8 @@
         xmlns:controls="clr-namespace:SimpleTrader.WPF.Controls"
         
         mc:Ignorable="d"
-        Title="Simple Trader" Height="560" Width="710" WindowStartupLocation="CenterScreen">
+        Title="Simple Trader" Height="560" Width="710" WindowStartupLocation="CenterScreen"
+        MinWidth="600" MinHeight="400">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
